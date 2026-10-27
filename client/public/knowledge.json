@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "records": [
+    {
+      "id": "demo:1",
+      "title": "GPU 温度过高如何排查",
+      "body": "# GPU 温度检查\n\n先采集证据，再判断是否存在热降频。\n\n1. 核对进风环境与散热通道。\n2. 记录温度、功耗和利用率。\n3. 对照设备厂商给出的阈值，不对所有型号使用同一温度阈值。\n\n```bash\nnvidia-smi --query-gpu=timestamp,name,temperature.gpu,power.draw,utilization.gpu --format=csv\n```\n\n> 教学样例：只读查询，不代表真实故障结论。",
+      "source": "GPU SRE Copilot 原创教学示例（非生产 SOP）",
+      "verified": true,
+      "kind": "qa",
+      "updatedAt": "2026-10-27T00:00:00.000Z"
+    },
+    {
+      "id": "demo:2",
+      "title": "GPU 显存不足如何定位",
+      "body": "## 先判断显存由谁占用\n\n使用 `nvidia-smi` 记录显存使用量和进程列表，再核对作业批大小、模型大小与其他任务。\n\n| 观察 | 下一步 |\n| --- | --- |\n| 同一任务随时间增长 | 检查缓存与对象生命周期 |\n| 多个任务同时占用 | 核对调度和资源分配 |\n\n不要未经确认结束其他进程。本文是教学样例。",
+      "source": "GPU SRE Copilot 原创教学示例（非生产 SOP）",
+      "verified": true,
+      "kind": "qa",
+      "updatedAt": "2026-10-27T00:00:00.000Z"
+    },
+    {
+      "id": "demo:3",
+      "title": "GPU 利用率低应该先检查什么",
+      "body": "## 对齐时间窗口\n\n先采集 GPU 利用率、CPU 和输入数据等待情况，再检查作业是否处于数据预处理、通信或计算阶段。\n\n利用率低并不单独证明设备故障。记录采样周期与作业阶段，避免用一次瞬时采样下结论。\n\n> 本条为原创教学样例，不包含生产指标。",
+      "source": "GPU SRE Copilot 原创教学示例（非生产 SOP）",
+      "verified": true,
+      "kind": "qa",
+      "updatedAt": "2026-10-27T00:00:00.000Z"
+    }
+  ]
+}

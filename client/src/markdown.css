@@ -1,0 +1,14 @@
+/* Copyright 2026 haozheyu. SPDX-License-Identifier: Apache-2.0 */
+.markdown-document{font-size:15px;line-height:1.85;overflow-wrap:anywhere;min-width:0;color:inherit}
+.markdown-document h1,.markdown-document h2,.markdown-document h3,.markdown-document h4{line-height:1.4;margin:1.4em 0 .65em;font-weight:700}
+.markdown-document h1{font-size:1.65em}.markdown-document h2{font-size:1.4em}.markdown-document h3{font-size:1.2em}
+.markdown-document p{margin:.8em 0;color:inherit}.markdown-document ul,.markdown-document ol{padding-left:1.7em;margin:.8em 0}.markdown-document li{margin:.35em 0}
+.markdown-document blockquote{margin:1em 0;border-left:3px solid #2457c8;padding:4px 16px;background:#f0f4fc;color:#526277}
+.markdown-document code{font-family:Consolas,monospace;font-size:.9em;background:#edf2fa;padding:2px 5px;border-radius:4px}
+.answer.markdown-document pre,.markdown-document pre{max-width:100%;overflow:auto;white-space:pre;overflow-wrap:normal;background:#f0f4fc;border:1px solid #d5deea;padding:16px;border-radius:8px;line-height:1.7}
+.markdown-document pre code{background:none;padding:0;white-space:pre;font-size:13px}
+.markdown-document .table-scroll{overflow-x:auto;max-width:100%;margin:16px 0;border:1px solid #d5deea;border-radius:6px}
+.markdown-document table{border-collapse:collapse;width:100%;font-size:14px}.markdown-document th,.markdown-document td{border:1px solid #d5deea;text-align:left;padding:9px 12px;min-width:100px}.markdown-document th{background:#edf2fa}
+.markdown-document a{color:#2457c8;text-decoration:underline;overflow-wrap:anywhere}.markdown-document hr{border:0;border-top:1px solid #d5deea;margin:24px 0}.markdown-document .image-placeholder{color:#526277;font-size:13px}
+.history-preview{max-height:190px;overflow:hidden;margin:12px 0}.markdown-document>:first-child{margin-top:0}
+@media print{.answer.markdown-document pre,.markdown-document pre{white-space:pre-wrap;overflow-wrap:anywhere}.markdown-document .table-scroll{overflow:visible}.markdown-document th,.markdown-document td{min-width:0}body{padding:0}}
